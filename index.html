@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JS Quiz Assignment</title>
+	<script src="quizproject.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel='icon' href='icons/HamiltonFavicon3.png' type='image/x-icon'>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Public+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="quizproject.css">
+  <link rel="manifest" href="manifest.json">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="manifest" href="manifest.json">
+  
+</head>
+<body onLoad="loadQuestion()">
+
+<section id="lightbox" onclick="closeLightBox()">
+   <div id="message">This is the message</div>
+</section>
+
+<section id="lightbox3" onclick="closeLightBox()">
+  <div id="iconmessage">This is the message</div>
+</section>
+
+<h1 class="icons">
+  <span>Hamilton Quiz</span>
+  <span id="logoinfo" onclick= "instructions()"  class="material-icons">&#xe88f;</span>
+  <span id="logohelp" onclick= "hints()" class="material-icons">&#xe90f;</span>
+</h1>
+<main class="grid-container">
+  
+  <header class="header">
+    <div id="question">The Question</div>
+  </header>
+  
+  <aside class="left">
+    <div>
+      <div class="options" id="a" onclick="markIt('a')">A.</div>
+      <div class="options" id="b" onclick="markIt('b')">B.</div>
+      <div class="options" id="c" onclick="markIt('c')">C.</div>
+      <div class="options" id="d" onclick="markIt('d')">D.</div>
+    </div>
+  </aside> 
+
+  
+  <figure class="right"> <img id="image" src="" alt=""></figure>
+  
+  <footer class="footer2">
+    <p>Score:  <span id="score"></span> </p>
+    <p>Hints left: <span id="hintdisplay">2</span></p>
+  </footer>
+</main>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
